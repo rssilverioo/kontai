@@ -28,9 +28,7 @@ const Hero: React.FC = () => {
                 Comece grátis
               </Button>
 
-              <Button variant="outline" size="lg">
-                Saiba mais
-              </Button>
+            
             </div>
             <div className="flex items-center gap-6 text-sm text-neutral-600 animate-slide-up" style={{ animationDelay: '0.6s' }}>
               <div className="flex items-center">
