@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../ui/Button';
 import { MessageSquare, BarChart2, ChevronDown } from 'lucide-react';
-
 const Hero: React.FC = () => {
   const scrollToNextSection = () => {
     const howItWorksSection = document.getElementById('como-funciona');
@@ -25,9 +24,10 @@ const Hero: React.FC = () => {
               Organize suas contas, receba relatórios no WhatsApp e veja tudo em um painel inteligente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <Button variant="primary" size="lg">
-                Comece grátis por 7 dias
+              <Button variant="primary" onClick={() => window.location.href = 'https://api.whatsapp.com/send?phone=5511988919770'} size="lg">
+                Comece grátis
               </Button>
+
               <Button variant="outline" size="lg">
                 Saiba mais
               </Button>
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div>
                     <div className="flex justify-between items-center mb-2">
                       <div className="text-xs font-medium text-neutral-800">Resumo</div>
